@@ -1,0 +1,124 @@
+
+.login-page{
+    width: 100%;
+    position: relative;
+}
+
+.login-section {
+    display: flex;
+    margin: 26px;
+    gap: 26px;
+}
+
+.login-img {
+    background: #F8F7FA;
+    border-radius: 20px;
+    min-width: 819px;
+    height: 1016px;
+    text-align: center;
+    img{
+        margin-top: 109px;
+        width: 610px;
+        height: 711px;
+    }
+}
+
+.login-form {
+    align-content: center;
+    max-width: 589px;
+    height: 1016px;
+    margin: auto;
+    h1{
+        font-size: 25px;
+    }
+    #description{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    Form{
+        width: 400px;
+        font-weight: 500;
+    }
+    Button{
+        margin-top: 16px;
+        width: 400px;
+        background: #7367F0;
+    }
+
+    Button:hover{
+        background: #6154e8;
+    }
+}
+
+.forgot-password{
+    float: right;
+    color: #6154e8;
+    font-weight: 500;
+}
+
+.check-box{
+    display: flex;
+    gap: 6px;
+    margin-top: 16px;
+    input{
+        width: 18px; 
+        gap: 10px;
+    }
+}
+.create-account{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    a{
+        margin-left: 5px;
+        color: #6154e8;
+    }
+}
+
+.or-line{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.2em;
+    margin: 10px 0 20px;
+    span{
+        background: #fff;
+        padding: 0 10px;
+    }
+}
+
+.login-methods{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    img{
+        cursor: pointer;
+        border-radius: 6px;
+        padding: 16px;
+    }
+    #fa{
+        background: #4267B229;
+        padding: 16px 20px;
+    }
+
+    #x{
+        background: rgba(29, 161, 242, 0.16);
+        padding: 16px 14px;
+    }
+
+    #gg{
+        background: rgba(219, 68, 55, 0.16);
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .login-img{
+        display: none;
+    }
+
+    .login-section{
+        display: flex;
+        align-items: flex-start;
+    }
+}
