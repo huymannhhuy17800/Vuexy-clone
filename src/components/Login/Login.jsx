@@ -2,8 +2,15 @@ import React from "react";
 import "./styles.scss";
 import { getImageUrl } from "../../utils";
 import { Button, Form } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import { User } from "../DashBoard/User/User";
+import { DashBoard } from "../../DashBoard";
 
 const Login = () => {
+  const handleClick = () => {
+    <Link to="/user"></Link>;
+  };
   return (
     <section className="login-page">
       <div className="login-section">
@@ -35,7 +42,12 @@ const Login = () => {
                 <span>Remember me</span>
               </div>
 
-              <Button variant="primary">Sign in</Button>
+              <Button variant="primary" onClick={handleClick}>
+                Sign in
+              </Button>
+              <Routes>
+                <Route path="/user" element={<User />}></Route>
+              </Routes>
             </Form.Group>
           </Form>
           <div className="create-account">
